@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styleRegistrar.css">
+	<title>Registrarse</title>
+</head>
+<body>
+    <form action="iniciarSesion.html" method="POST" onsubmit="return validacionRegistro()">
+		<h1 class="header">Registrate</h1>
+		<hr>
+			<p id="respuesta"></p>
+		<hr>
+		<h2 class="header">Escribe tus datos</h2>
+
+		<label>Nombre Completo</label>
+		<input type="text" name="nombre_completo" autocomplete="off" placeholder="Nombre Completo" id="nombre_completo">
+
+		<label>Nombre de Usuario</label>
+		<input type="text" name="nombre_usuario" autocomplete="off" placeholder="Usuario" id="nombre_usuario">
+
+		<label>Contraseña</label>
+		<input type="password" name="password" autocomplete="off" placeholder="Contraseña" id="password">
+		<section id="boton">
+			<button type="submit"> Registrarse</button>
+		</section>
+	</form>
+	<script src="./js/script.js"></script>
+</body>
+</html>
